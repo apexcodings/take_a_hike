@@ -1,0 +1,11 @@
+<h3>Browse All Hikes</h3>
+
+<div class='row container-fluid'>
+
+  <% @hikes.each do |hike| %>
+    <div class="col-md-4">
+      <%= link_to hike.name, hike_path(hike) %>
+    </div>
+  <% end %>
+
+</div>
