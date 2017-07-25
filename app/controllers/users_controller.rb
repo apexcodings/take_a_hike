@@ -16,6 +16,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def admin
+    @hikes = Hike.all
+  end
+
 private
 
   def user_params

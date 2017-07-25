@@ -23,7 +23,7 @@
 - [ ] Accounts can add new reviews and edit/remove their own reviews
 
 #### Views
-- [ ] Sign up, sign in
+- [x] Sign up, sign in
 - [ ] Homepage
 - [x] View all Hikes
 - [x] View individual Hike
@@ -31,6 +31,7 @@
 - [ ] Profile page for Accounts
   - [ ] Show all reviews they've left
 - [ ] About/Contact
+- [x] Admin control page
 
 
 ## Stretch Goals

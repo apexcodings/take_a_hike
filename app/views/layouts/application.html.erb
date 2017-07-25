@@ -47,6 +47,15 @@
       <%= yield %>
     </div>
 
+    <footer class="footer">
+      <% if current_user && current_user.admin %>
+        <div class="container-fluid text-right">
+          <h4><%= link_to "Administrator", admin_path %></h4>
+        </div>
+      <% end %>
+    </footer>
+
+
   </body>
 
 </html>

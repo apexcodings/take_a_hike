@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   post '/signin' => 'sessions#create'
   get '/signout' => 'sessions#destroy'
 
+  get '/admin' => 'users#admin'
+
   resources :hikes
 
 end

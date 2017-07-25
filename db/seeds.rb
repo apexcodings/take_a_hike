@@ -51,6 +51,14 @@ class Seed
       username: 'admin',
       email: 'admin@email.com',
       password: 'Asdfasdf1',
+      password_confirmation: 'Asdfasdf1',
+      admin: true
+    )
+
+    user1 = User.create!(
+      username: 'user',
+      email: 'user@email.com',
+      password: 'Asdfasdf1',
       password_confirmation: 'Asdfasdf1'
     )
   end
