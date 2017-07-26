@@ -1,0 +1,30 @@
+<%= render 'layouts/errors', :object => @hike %>
+
+<%= form_for @hike do |f| %>
+  <div class='form-group'>
+    <%= f.label :name %>
+    <br>
+    <%= f.text_field :name %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :length %>
+    <br>
+    <%= f.text_field :length %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :elevation %>
+    <br>
+    <%= f.text_field :elevation %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :difficulty %>
+    <br>
+    <%= f.text_field :difficulty %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :description %>
+    <br>
+    <%= f.text_area :description %>
+  </div>
+  <%= f.submit :class => 'btn btn-outline-success'%>
+<% end %>

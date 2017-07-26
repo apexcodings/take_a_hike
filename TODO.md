@@ -18,7 +18,7 @@
 - [ ] Seed 2-3 Reviews/Hike
 
 #### Authorization
-- [ ] Admin can add/edit/remove hikes
+- [x] Admin can add/edit/remove hikes
 - [ ] Admin can add/edit/remove reviews
 - [ ] Accounts can add new reviews and edit/remove their own reviews
 
