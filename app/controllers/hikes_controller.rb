@@ -1,4 +1,5 @@
 class HikesController < ApplicationController
+  before_action :authorize_admin, :except => [:index, :show]
 
   def index
     @hikes = Hike.all
@@ -14,7 +15,7 @@ class HikesController < ApplicationController
 
   def create
     if Hike.create!(hike_params)
-      redirect_to admin_path, notice: 'Hike successfully added'
+      redirect_to admin_path, notice: 'Hike successfully added!'
     else
       render :new
     end
@@ -27,7 +28,7 @@ class HikesController < ApplicationController
   def update
     @hike = Hike.find(params[:id])
     if @hike.update!(hike_params)
-      redirect_to admin_path, notice: 'Hike successfully updated'
+      redirect_to admin_path, notice: 'Hike successfully updated!'
     else
       render :edit
     end
@@ -36,7 +37,7 @@ class HikesController < ApplicationController
   def destroy
     @hike = Hike.find(params[:id])
     @hike.destroy
-    redirect_to admin_path, notice: 'Hike successfully deleted'
+    redirect_to admin_path, notice: 'Hike successfully deleted!'
   end
 
 private
