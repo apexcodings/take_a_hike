@@ -1,11 +1,18 @@
 class Seed
 
   def self.begin
-    Hike.destroy_all
-    User.destroy_all
     seed = Seed.new
+    seed.clear_database
     seed.generate_hikes
     seed.generate_users
+    seed.generate_reviews
+  end
+
+  def clear_database
+    Hike.destroy_all
+    User.destroy_all
+    Account.destroy_all
+    Review.destroy_all
   end
 
   def generate_hikes
@@ -54,13 +61,37 @@ class Seed
       password_confirmation: 'Asdfasdf1',
       admin: true
     )
-
-    user1 = User.create!(
+    @user1 = User.create!(
       username: 'user',
       email: 'user@email.com',
       password: 'Asdfasdf1',
       password_confirmation: 'Asdfasdf1'
     )
+    @user2 = User.create!(
+      username: 'pro_hiker',
+      email: 'user2@email.com',
+      password: 'Asdfasdf1',
+      password_confirmation: 'Asdfasdf1'
+    )
+    @user3 = User.create!(
+      username: 'new_to_PNW',
+      email: 'user3@email.com',
+      password: 'Asdfasdf1',
+      password_confirmation: 'Asdfasdf1'
+    )
+  end
+
+  def generate_reviews
+    Hike.all.each do |hike|
+      User.all.each do |user|
+        hike.reviews.create!(
+          account_id: user.account.id,
+          author: user.username,
+          content: Faker::Lorem.paragraph,
+          rating: rand(1..5)
+        )
+      end
+    end
   end
 
 end

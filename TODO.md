@@ -8,14 +8,14 @@
 - [x] Account model - user_id
   * One to one between User and Account
 - [x] Hike model - name, length, elevation, difficulty, rating, description
-- [ ] Review model - account_id, hike_id, author, content, rating
+- [x] Review model - account_id, hike_id, author, content, rating
   * Has and belongs to many between Hike and Account
 
 #### Database
 - [x] Seed Hikes
 - [x] Seed 1 admin User
-- [ ] Seed 5 normal Users
-- [ ] Seed 2-3 Reviews/Hike
+- [x] Seed 3 normal Users
+- [x] Seed 2-4 Reviews/Hike
 
 #### Authorization
 - [x] Admin can add/edit/remove hikes
