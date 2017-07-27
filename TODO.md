@@ -20,8 +20,8 @@
 
 #### Authorization
 - [x] Admin can add/edit/remove hikes
-- [ ] Admin can add/edit/remove reviews
 - [x] Accounts can add new reviews and edit/remove their own reviews
+- [x] Admin can remove any user's reviews
 
 #### Views
 - [x] Sign up, sign in
@@ -41,3 +41,7 @@
   * List all bookmarks for that account in the profile page
 - [ ] Weather API
 - [ ] Allow sign in with username
+- [ ] Mailbox to send email confirmation after signing up
+
+
+CURRENTLY: fix paperclip with windows

@@ -21,6 +21,8 @@
   </div>
 </div>
 
+<%= image_tag @hike.image.url %>
+
 <p><%= @hike.description %></p>
 
 <hr>
@@ -46,8 +48,10 @@
     </div>
     <div class="card-block">
       <p class="card-text"><%= review.content %></p>
-      <% if current_user && review.account_id == current_user.account.id %>
+      <% if current_user && (review.account_id == current_user.account.id) %>
         <%= link_to 'Edit', edit_hike_review_path(@hike, review), class: 'card-link' %>
+      <% end %>
+      <% if current_user && (review.account_id == current_user.account.id || current_user.admin) %>
         <%= link_to 'Delete', hike_review_path(@hike, review), method: 'delete', data: { confirm: 'Are you sure you want to delete your review?' }, class: 'card-link' %>
       <% end %>
     </div>
