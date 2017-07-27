@@ -8,6 +8,7 @@
 - [x] Account model - user_id
   * One to one between User and Account
 - [x] Hike model - name, length, elevation, difficulty, rating, description
+  - [ ] Add image attribute with Paperclip
 - [x] Review model - account_id, hike_id, author, content, rating
   * Has and belongs to many between Hike and Account
 
@@ -20,14 +21,14 @@
 #### Authorization
 - [x] Admin can add/edit/remove hikes
 - [ ] Admin can add/edit/remove reviews
-- [ ] Accounts can add new reviews and edit/remove their own reviews
+- [x] Accounts can add new reviews and edit/remove their own reviews
 
 #### Views
 - [x] Sign up, sign in
 - [ ] Homepage
 - [x] View all Hikes
 - [x] View individual Hike
-  - [ ] Show all reviews
+  - [x] Show all reviews
 - [ ] Profile page for Accounts
   - [ ] Show all reviews they've left
 - [ ] About/Contact

@@ -54,31 +54,27 @@ class Seed
   end
 
   def generate_users
-    admin = User.create!(
+    @admin = User.create!(
       username: 'admin',
       email: 'admin@email.com',
       password: 'Asdfasdf1',
       password_confirmation: 'Asdfasdf1',
       admin: true
     )
-    @user1 = User.create!(
+    @user = User.create!(
       username: 'user',
       email: 'user@email.com',
       password: 'Asdfasdf1',
       password_confirmation: 'Asdfasdf1'
     )
-    @user2 = User.create!(
-      username: 'pro_hiker',
-      email: 'user2@email.com',
-      password: 'Asdfasdf1',
-      password_confirmation: 'Asdfasdf1'
-    )
-    @user3 = User.create!(
-      username: 'new_to_PNW',
-      email: 'user3@email.com',
-      password: 'Asdfasdf1',
-      password_confirmation: 'Asdfasdf1'
-    )
+    3.times do
+      User.create!(
+        username: Faker::Internet.user_name,
+        email: Faker::Internet.free_email,
+        password: 'Asdfasdf1',
+        password_confirmation: 'Asdfasdf1'
+      )
+    end
   end
 
   def generate_reviews

@@ -15,6 +15,10 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
 
+ body {
+  padding-bottom: 80px;
+ }
+
  footer {
   height: 60px;
   position: fixed;
@@ -23,4 +27,17 @@
   padding-top: 15px;
   border-top: 1px solid gray;
   line-height: 60px; /* Vertically center the text there */
+  background-color: white;
+}
+
+#add-review-button {
+  text-align: right;
+}
+
+.card {
+  margin: 20px;
+}
+
+#review-rating {
+  text-align: right;
 }

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get '/admin' => 'users#admin'
 
-  resources :hikes
+  resources :hikes do
+    resources :reviews, :except => [:index, :show]
+  end
 
 end

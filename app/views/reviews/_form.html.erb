@@ -1,0 +1,15 @@
+<%= render 'layouts/errors', :object => @review %>
+
+<%= form_for [@hike, @review] do |f| %>
+  <div class='form-group'>
+    <%= f.label :rating %>
+    <br>
+    <%= f.number_field :rating, in: 1..5 %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :content %>
+    <br>
+    <%= f.text_area :content %>
+  </div>
+  <%= f.submit :class => 'btn btn-outline-success'%>
+<% end %>
