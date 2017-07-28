@@ -8,7 +8,7 @@
 - [x] Account model - user_id
   * One to one between User and Account
 - [x] Hike model - name, length, elevation, difficulty, rating, description
-  - [ ] Add image attribute with Paperclip
+  - [x] Add image attribute with Paperclip
 - [x] Review model - account_id, hike_id, author, content, rating
   * Has and belongs to many between Hike and Account
 
@@ -42,6 +42,3 @@
 - [ ] Weather API
 - [ ] Allow sign in with username
 - [ ] Mailbox to send email confirmation after signing up
-
-
-CURRENTLY: fix paperclip with windows
