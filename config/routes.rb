@@ -14,4 +14,6 @@ Rails.application.routes.draw do
     resources :reviews, :except => [:index, :show]
   end
 
+  post '/search' => 'hikes#search'
+
 end

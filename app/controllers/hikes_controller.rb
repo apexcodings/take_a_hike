@@ -1,5 +1,5 @@
 class HikesController < ApplicationController
-  before_action :authorize_admin, :except => [:index, :show]
+  before_action :authorize_admin, :except => [:index, :show, :search]
 
   def index
     @hikes = Hike.all
@@ -38,6 +38,11 @@ class HikesController < ApplicationController
     @hike = Hike.find(params[:id])
     @hike.destroy
     redirect_to admin_path, notice: 'Hike successfully deleted!'
+  end
+
+  def search
+    @search_results = Hike.search(params[:search])
+    render :search
   end
 
 private

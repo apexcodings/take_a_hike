@@ -1,0 +1,7 @@
+<h3>Search Results:</h3>
+
+<ul>
+  <% @search_results.each do |hike| %>
+    <li><%= link_to hike.name, hike_path(hike) %></li>
+  <% end %>
+</ul>
