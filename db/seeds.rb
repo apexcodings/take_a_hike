@@ -22,7 +22,9 @@ class Seed
       elevation: 2883,
       difficulty: 'Hard',
       description: 'Rachel and Rampart Lakes Trail is a 8.9 mile moderately trafficked out and back trail located near Cle Elum, Washington that features a lake and is rated as difficult.',
-      image: open('public/images/rachel_lake.jpg')
+      image: open('public/images/rachel_lake.jpg'),
+      latitude: 47.4012,
+      longitude: -121.2848
     )
     @hike2 = Hike.create!(
       name: 'Mount Storm King',
@@ -30,7 +32,9 @@ class Seed
       elevation: 2112,
       difficulty: 'Hard',
       description: 'Mount Storm King is a 3.8 mile heavily trafficked out and back trail located near Port Angeles, Washington that features a lake and is only recommended for very experienced adventurers.',
-      image: open('public/images/mount_storm_king.jpg')
+      image: open('public/images/mount_storm_king.jpg'),
+      latitude: 48.0582,
+      longitude: -123.7892
     )
     @hike3 = Hike.create!(
       name: 'Maple Pass',
@@ -38,7 +42,9 @@ class Seed
       elevation: 2276,
       difficulty: 'Moderate',
       description: 'Maple Pass Trail is a 6.7 mile moderately trafficked loop trail located near Mazama, Washington that features a lake and is rated as moderate.',
-      image: open('public/images/maple_pass.jpg')
+      image: open('public/images/maple_pass.jpg'),
+      latitude: 48.5162,
+      longitude: -120.7354
     )
     @hike4 = Hike.create!(
       name: 'Latourell Falls Loop',
@@ -46,7 +52,9 @@ class Seed
       elevation: 793,
       difficulty: 'Easy',
       description: 'Latourell Falls Loop Trail is a 2.1 mile moderately trafficked loop trail located near Corbett, Oregon that features a waterfall and is good for all skill levels.',
-      image: open('public/images/latourell_falls.jpg')
+      image: open('public/images/latourell_falls.jpg'),
+      latitude: 45.5387,
+      longitude: -122.2177
     )
     @hike5 = Hike.create!(
       name: 'Kendall Katwalk',
@@ -54,7 +62,9 @@ class Seed
       elevation: 3858,
       difficulty: 'Hard',
       description: 'Kendall Katwalk Trail is a 14.5 mile moderately trafficked out and back trail located near Snoqualmie Pass, Washington that features a lake and is rated as difficult.',
-      image: open('public/images/kendall_katwalk.jpg')
+      image: open('public/images/kendall_katwalk.jpg'),
+      latitude: 47.4287,
+      longitude: -121.4134
     )
     @hike6 = Hike.create!(
       name: 'Skyline Loop',
@@ -62,7 +72,9 @@ class Seed
       elevation: 1797,
       difficulty: 'Moderate',
       description: 'Skyline Loop Trail is a 5.4 mile heavily trafficked loop trail located near Paradise Inn, Washington that features a waterfall and is rated as moderate.',
-      image: open('public/images/skyline_loop.jpg')
+      image: open('public/images/skyline_loop.jpg'),
+      latitude: 46.7860,
+      longitude: -121.7350
     )
     @hike7 = Hike.create!(
       name: 'Trail of Ten Falls',
@@ -70,7 +82,9 @@ class Seed
       elevation: 1433,
       difficulty: 'Moderate',
       description: 'Trail of Ten Falls is a 7.1 mile heavily trafficked loop trail located near Silverton, Oregon that features a waterfall and is rated as moderate.',
-      image: open('public/images/silver_falls.jpg')
+      image: open('public/images/silver_falls.jpg'),
+      latitude: 44.8777,
+      longitude: -122.6556
     )
     @hike8 = Hike.create!(
       name: 'Angel\'s Rest Loop',
@@ -78,7 +92,9 @@ class Seed
       elevation: 3553,
       difficulty: 'Hard',
       description: 'Angels Rest Loop Trail is a 9.7 mile moderately trafficked loop trail located near Corbett, Oregon that features a waterfall and is rated as difficult.',
-      image: open('public/images/angels_rest.jpg')
+      image: open('public/images/angels_rest.jpg'),
+      latitude: 45.5602,
+      longitude: -122.1727
     )
   end
 

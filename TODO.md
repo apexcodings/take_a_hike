@@ -34,9 +34,15 @@
 - [ ] About/Contact
 - [x] Admin control page
 
+#### Google Maps API
+- [x] Map on show page
+- [ ] Separate logic out from HTML view
+  * Using a PORO Map in services
+- [ ] Hide API key using .env
+- [ ] All trails plotted on a big map
 
 ## Stretch Goals
-- [ ] Scrape data from AllTrails to seed database
+- [ ] Scrape data from AllTrails and WTA to seed database
 - [ ] Bookmark model - account_id, hike_id
   * List all bookmarks for that account in the profile page
 - [ ] Weather API

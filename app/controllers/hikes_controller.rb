@@ -7,6 +7,8 @@ class HikesController < ApplicationController
 
   def show
     @hike = Hike.find(params[:id])
+    @lat = @hike.latitude
+    @lng = @hike.longitude
   end
 
   def new
