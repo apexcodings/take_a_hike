@@ -15,11 +15,37 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
 
- body {
+body {
   padding-bottom: 80px;
- }
+  background-color: #CFD8DC;
+}
 
- footer {
+.navbar {
+  background-color: #558B2F;
+  margin-bottom: 20px;
+}
+
+.nav-link, .navbar-brand {
+  color: #f7f7f7 !important;
+}
+
+.nav-link:hover {
+  color: #d6d6d6 !important;
+}
+
+.nav-btn {
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 10px;
+  border: 1px solid #f7f7f7;
+  color: #f7f7f7;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+footer {
   height: 60px;
   position: fixed;
   bottom: 0;
@@ -50,6 +76,11 @@
 .index-hike-title {
   text-align: center;
   margin-top: 30px;
+}
+
+.index-hike-title a {
+  color: #292b2c;
+  text-decoration: none;
 }
 
 .show-image {
