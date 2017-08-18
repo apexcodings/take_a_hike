@@ -1,8 +1,7 @@
-<h1>Hiking the Beautiful Pacific Northwest</h1>
+<h2>Hiking the Beautiful Pacific Northwest</h2>
 
-<h3>Find your next adventure:</h3>
-
-<div>
+<div class='container section'>
+  <h4>Find your next adventure:</h4>
   <%= form_tag (search_path), class:'form-inline my-2 my-lg-0' do %>
     <%= text_field_tag :search, "", class: 'form-control mr-sm-2' %>
     <%= submit_tag 'Search', class: 'btn my-2 my-sm-0 nav-btn' %>
