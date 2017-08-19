@@ -96,6 +96,26 @@ class Seed
       latitude: 45.5602,
       longitude: -122.1727
     )
+    @hike9 = Hike.create!(
+      name: 'Palouse Falls',
+      length: 2.6,
+      elevation: 692,
+      difficulty: 'Easy',
+      description: 'Palouse Falls Trail is a 2.6 mile moderately trafficked loop trail located near Washtucna, Washington that features a waterfall and is good for all skill levels.',
+      image: open('public/images/palouse_falls.jpg'),
+      latitude: 46.6636,
+      longitude: -118.2281
+    )
+    @hike10 = Hike.create!(
+      name: 'The Enchantments',
+      length: 18.0,
+      elevation: 7509,
+      difficulty: 'Hard',
+      description: 'The Enchantments Trail is a 18 mile moderately trafficked point-to-point trail located near Leavenworth, Washington that features a lake and is only recommended for very experienced adventurers.',
+      image: open('public/images/enchantments.jpg'),
+      latitude: 47.5279,
+      longitude: -120.8207
+    )
   end
 
   def generate_users

@@ -63,7 +63,7 @@
 
 <% @hike.reviews.each do |review| %>
   <div class="card container">
-    <div class="card-content cyan lighten-2">
+    <div class="card-content blue lighten-4">
 
       <div class="row">
         <div class="col s6">
@@ -79,11 +79,12 @@
       <div class="divider"></div>
       <div class="card-action">
         <p class="card-text"><%= review.content %></p>
+        <br>
         <% if current_user && (review.account_id == current_user.account.id) %>
-          <%= link_to 'Edit', edit_hike_review_path(@hike, review), class: 'card-link' %>
+          <%= link_to 'Edit', edit_hike_review_path(@hike, review), class: 'card-link light-blue-text text-darken-3' %>
         <% end %>
         <% if current_user && (review.account_id == current_user.account.id || current_user.admin) %>
-          <%= link_to 'Delete', hike_review_path(@hike, review), method: 'delete', data: { confirm: 'Are you sure you want to delete your review?' }, class: 'card-link' %>
+          <%= link_to 'Delete', hike_review_path(@hike, review), method: 'delete', data: { confirm: 'Are you sure you want to delete your review?' }, class: 'card-link light-blue-text text-darken-3' %>
         <% end %>
       </div><!-- card-action -->
 

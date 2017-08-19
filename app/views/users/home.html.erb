@@ -1,9 +1,11 @@
-<h2>Hiking the Beautiful Pacific Northwest</h2>
+<body id='home-welcome'>
+  <h2>Hiking the Beautiful Pacific Northwest</h2>
 
-<div class='container section'>
-  <h4>Find your next adventure:</h4>
-  <%= form_tag (search_path), class:'form-inline my-2 my-lg-0' do %>
-    <%= text_field_tag :search, "", class: 'form-control mr-sm-2' %>
-    <%= submit_tag 'Search', class: 'btn my-2 my-sm-0 nav-btn' %>
-  <% end %>
-</div>
+  <div class='container section' id='home-search'>
+    <h4>Find your next adventure:</h4>
+    <%= form_tag (search_path), class:'form-inline my-2 my-lg-0' do %>
+      <%= text_field_tag :search, "", class: 'form-control mr-sm-2' %>
+      <%= submit_tag 'Search', class: 'btn my-2 my-sm-0 nav-btn' %>
+    <% end %>
+  </div>
+</body>

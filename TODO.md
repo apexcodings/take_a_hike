@@ -25,13 +25,14 @@
 
 #### Views
 - [x] Sign up, sign in
-- [ ] Homepage
+- [X] Homepage
 - [x] View all Hikes
 - [x] View individual Hike
   - [x] Show all reviews
 - [ ] Profile page for Accounts
   - [ ] Show all reviews they've left
-- [ ] About/Contact
+- [ ] About
+- [ ] Contact
 - [x] Admin control page
 
 #### Google Maps API

@@ -28,6 +28,19 @@ main {
   flex: 1 0 auto;
 }
 
+#home-welcome {
+  background-image: image-url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#home-search {
+  background-color: rgba(50, 50, 50, 0.6);
+  padding: 30px;
+  margin-top: 100px;
+}
+
 #add-review-button {
   text-align: right;
 }
