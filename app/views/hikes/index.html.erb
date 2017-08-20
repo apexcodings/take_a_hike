@@ -5,7 +5,7 @@
   <% @hikes.each do |hike| %>
     <div class="col s4">
       <h5 class='index-hike-title'><%= link_to hike.name, hike_path(hike) %></h5>
-      <a href='/hikes/<%= hike.id %>'><%= image_tag hike.image.url, class: 'thumbnail' %><a>
+      <a href='/hikes/<%= hike.id %>'><%= image_tag hike.image.url, class: 'thumbnail' %></a>
     </div>
   <% end %>
 

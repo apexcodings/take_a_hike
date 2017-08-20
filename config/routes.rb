@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root :to => 'users#home'
+  root :to => 'pages#home'
+
+  get '/contact' => 'pages#contact'
 
   get '/signup' => 'users#new'
   post '/users' => 'users#create'

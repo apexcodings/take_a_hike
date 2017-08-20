@@ -47,14 +47,14 @@ class Seed
       longitude: -120.7354
     )
     @hike4 = Hike.create!(
-      name: 'Latourell Falls Loop',
-      length: 2.1,
-      elevation: 793,
-      difficulty: 'Easy',
-      description: 'Latourell Falls Loop Trail is a 2.1 mile moderately trafficked loop trail located near Corbett, Oregon that features a waterfall and is good for all skill levels.',
-      image: open('public/images/latourell_falls.jpg'),
-      latitude: 45.5387,
-      longitude: -122.2177
+      name: 'The Enchantments',
+      length: 18.0,
+      elevation: 7509,
+      difficulty: 'Hard',
+      description: 'The Enchantments Trail is a 18 mile moderately trafficked point-to-point trail located near Leavenworth, Washington that features a lake and is only recommended for very experienced adventurers.',
+      image: open('public/images/enchantments.jpg'),
+      latitude: 47.5279,
+      longitude: -120.8207
     )
     @hike5 = Hike.create!(
       name: 'Kendall Katwalk',
@@ -107,14 +107,34 @@ class Seed
       longitude: -118.2281
     )
     @hike10 = Hike.create!(
-      name: 'The Enchantments',
-      length: 18.0,
-      elevation: 7509,
-      difficulty: 'Hard',
-      description: 'The Enchantments Trail is a 18 mile moderately trafficked point-to-point trail located near Leavenworth, Washington that features a lake and is only recommended for very experienced adventurers.',
-      image: open('public/images/enchantments.jpg'),
-      latitude: 47.5279,
-      longitude: -120.8207
+      name: 'Latourell Falls Loop',
+      length: 2.1,
+      elevation: 793,
+      difficulty: 'Easy',
+      description: 'Latourell Falls Loop Trail is a 2.1 mile moderately trafficked loop trail located near Corbett, Oregon that features a waterfall and is good for all skill levels.',
+      image: open('public/images/latourell_falls.jpg'),
+      latitude: 45.5387,
+      longitude: -122.2177
+    )
+    @hike11 = Hike.create!(
+      name: 'Toketee Falls',
+      length: 0.8,
+      elevation: 209,
+      difficulty: 'Easy',
+      description: 'Toketee Falls is a 0.8 mile moderately trafficked out and back trail located near Glide, Oregon that features a waterfall and is good for all skill levels.',
+      image: open('public/images/toketee_falls.jpg'),
+      latitude: 43.2633,
+      longitude: -122.4337
+    )
+    @hike12 = Hike.create!(
+      name: 'Tolmie Peak',
+      length: 5.2,
+      elevation: 1646,
+      difficulty: 'Moderate',
+      description: 'Tolmie Peak Trail is a 5.2 mile moderately trafficked out and back trail located near Ashford, Washington that features a lake and is rated as moderate.',
+      image: open('public/images/tolmie_peak.jpg'),
+      latitude: 46.9327,
+      longitude: -121.8636
     )
   end
 
