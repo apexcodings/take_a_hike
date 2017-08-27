@@ -25,7 +25,7 @@ Take A Hike is a web application to document hiking trails in the Pacific Northw
 * Launch the application: "rails s"
 * Navigate to the application home page: "localhost:3000" as the URL in any browser
 
-## User Setup
+### User Setup
 
 * Sign in as the seeded admin user to access admin privileges for adding/editing/removing hikes:
   * Email: admin@email.com
@@ -34,6 +34,10 @@ Take A Hike is a web application to document hiking trails in the Pacific Northw
 * Alternatively, sign in as the seeded customer to edit prepopulated reviews:
   * Email: user@email.com
   * Password: Asdfasdf1
+
+### Mail Setup
+* Run Mailcatcher: "mailcatcher"
+* Open new browser window: "http://127.0.0.1:1080/"
 
 ## Known Bugs
 

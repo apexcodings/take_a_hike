@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root :to => 'pages#home'
 
-  get '/contact' => 'pages#contact'
-
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
@@ -17,5 +15,7 @@ Rails.application.routes.draw do
   end
 
   post '/search' => 'hikes#search'
+
+  resources :contact_forms, :only => [:new, :create]
 
 end

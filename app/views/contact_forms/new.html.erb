@@ -1,0 +1,23 @@
+<body id='contact'>
+  <h3>Get In Touch</h3>
+
+  <div class="row container">
+    <div class="col s12">
+      <div class="card-panel" id="contact-form">
+        <%= form_for @contact_form do |f| %>
+          <div class='form-group'>
+            Name: <%= f.text_field :name %>
+          </div>
+          <div class='form-group'>
+            Email: <%= f.text_field :email %>
+          </div>
+          <div class='form-group'>
+            Message: <%= f.text_area :message %>
+          </div>
+          <%= f.submit "Send Message", class: 'btn' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</body>
