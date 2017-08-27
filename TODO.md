@@ -31,8 +31,8 @@
   - [x] Show all reviews
 - [ ] Profile page for Accounts
   - [ ] Show all reviews they've left
-- [ ] About
 - [ ] Contact
+  - [ ] Form to send email
 - [x] Admin control page
 
 #### Google Maps API
