@@ -1,4 +1,16 @@
-<h3><%= @hike.name %></h3>
+<div class='row'>
+  <div class='col s6'>
+    <h3><%= @hike.name %></h3>
+  </div>
+  <div class='col s6' id='show-rating'>
+    <h5>Average Rating: </h5>
+    <% if @hike.rating == nil %>
+      <h5>N/A</h5>
+    <% else %>
+      <h5><%= @hike.rating %>/5</h5>
+    <% end %>
+  </div>
+</div>
 
 <div class='row'>
   <div class='col s4'>

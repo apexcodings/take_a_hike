@@ -27,12 +27,15 @@
 - [x] Sign up, sign in
 - [X] Homepage
 - [x] View all Hikes
+  - [x] Average rating
 - [x] View individual Hike
   - [x] Show all reviews
-- [ ] Profile page for Accounts
-  - [ ] Show all reviews they've left
-- [ ] Contact
-  - [ ] Form to send email
+  - [x] Average rating
+- [x] Profile page for Users
+  - [x] Show all reviews they've left
+  - [ ] Show all bookmarks
+- [x] Contact
+  - [x] Form to send email
 - [x] Admin control page
 
 #### Google Maps API
@@ -49,3 +52,5 @@
 - [ ] Weather API
 - [ ] Allow sign in with username
 - [ ] Mailbox to send email confirmation after signing up
+- [ ] Deploy to Firebase hosting
+- [ ] 5 star rating icons

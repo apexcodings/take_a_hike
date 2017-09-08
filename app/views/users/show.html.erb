@@ -1,0 +1,11 @@
+<h3><%= current_user.email %></h3>
+
+<hr>
+
+<h5>All Reviews:</h5>
+
+<ul>
+  <% @reviews.each do |review| %>
+    <li><%= link_to review.hike.name, hike_path(review.hike) %> (<%= review.rating %>/5)</li>
+  <% end %>
+</ul>

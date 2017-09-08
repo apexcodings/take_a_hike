@@ -165,13 +165,19 @@ class Seed
   def generate_reviews
     Hike.all.each do |hike|
       User.all.each do |user|
-        hike.reviews.create!(
+        new_review = hike.reviews.create!(
           account_id: user.account.id,
           author: user.username,
           content: Faker::Lorem.paragraph,
           rating: rand(1..5)
         )
+        if hike.rating == nil
+          hike.update!(rating: new_review.rating)
+        else
+          hike.update!(rating: (hike.rating + new_review.rating))
+        end
       end
+      hike.update!(rating: (hike.rating/hike.reviews.length).round(1))
     end
   end
 

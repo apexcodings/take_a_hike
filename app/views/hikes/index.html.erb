@@ -3,8 +3,15 @@
 <div class='row container-fluid'>
 
   <% @hikes.each do |hike| %>
-    <div class="col s4">
-      <h5 class='index-hike-title'><%= link_to hike.name, hike_path(hike) %></h5>
+    <div class="col s4 index-hike-title">
+      <div class='row'>
+        <div class='col s9'>
+          <h5><%= link_to hike.name, hike_path(hike) %></h5>
+        </div>
+        <div class='col s3'>
+          <p><%= hike.rating %>/5</p>
+        </div>
+      </div>
       <a href='/hikes/<%= hike.id %>'><%= image_tag hike.image.url, class: 'thumbnail' %></a>
     </div>
   <% end %>

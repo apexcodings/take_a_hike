@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :find_hike, :authorize_user
+  after_action :update_hike_rating
 
   def new
     @hike = Hike.find(params[:hike_id])
@@ -41,6 +42,16 @@ private
 
   def find_hike
     @hike = Hike.find(params[:hike_id])
+  end
+
+  def update_hike_rating
+    total_rating = 0
+    @hike.reviews.each do |review|
+      total_rating += review.rating
+    end
+    total_reviews = @hike.reviews.length.to_f
+    updated_rating = (total_rating/total_reviews).round(1)
+    @hike.update!(rating: updated_rating)
   end
 
 end

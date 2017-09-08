@@ -21,6 +21,11 @@ class UsersController < ApplicationController
     @hikes = Hike.all
   end
 
+  def show
+    @account = Account.find(params[:id])
+    @reviews = @account.reviews
+  end
+
 private
 
   def user_params
