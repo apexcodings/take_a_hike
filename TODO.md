@@ -54,3 +54,4 @@
 - [ ] Mailbox to send email confirmation after signing up
 - [ ] Deploy to Firebase hosting
 - [ ] 5 star rating icons
+- [ ] AJAX for reviews

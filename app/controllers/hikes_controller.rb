@@ -9,6 +9,9 @@ class HikesController < ApplicationController
     @hike = Hike.find(params[:id])
     @lat = @hike.latitude
     @lng = @hike.longitude
+    weather_object = Weather.new(@lat, @lng)
+    @weather = weather_object.get_weather()
+    @icon = @weather[:currently]
   end
 
   def new
