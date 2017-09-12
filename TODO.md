@@ -49,9 +49,10 @@
 - [ ] Scrape data from AllTrails and WTA to seed database
 - [ ] Bookmark model - account_id, hike_id
   * List all bookmarks for that account in the profile page
-- [ ] Weather API
+- [x] Weather API
 - [ ] Allow sign in with username
 - [ ] Mailbox to send email confirmation after signing up
 - [ ] Deploy to Firebase hosting
 - [ ] 5 star rating icons
 - [ ] AJAX for reviews
+- [ ] Font Awesome

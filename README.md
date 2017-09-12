@@ -56,6 +56,7 @@ For any comments or concerns, please email Bryan at bryanlin39@gmail.com.
 * CSS
 * Materialize
 * Google Maps API
+* Dark Sky Weather API
 
 ### License
 
